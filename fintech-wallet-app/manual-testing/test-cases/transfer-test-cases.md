@@ -1,7 +1,8 @@
-Manual Test Cases – Fund Transfer Feature
-Module: Wallet Fund Transfer
+## Manual Test Cases – Fund Transfer Feature
+Module: Wallet - Fund Transfer
 Priority: High
 Risk Level: Critical (Financial Transaction)
+
 
 **TC_TRANSFER_001 – Successful fund transfer to another valid user:**
 | Field           | Description                                                                                             |
@@ -46,7 +47,7 @@ Risk Level: Critical (Financial Transaction)
 | Field           | Description                                                                                             |
 | --------------- | ------------------------------------------------------------------------------------------------------- |
 | Test Case ID    | TC_TRANSFER_004                                                                                         |
-| Scenario ID     | TS_TRANSFER_003                                                                                         |
+| Scenario ID     | TS_TRANSFER_004                                                                                         |
 | Title           | Prevent transfer with negative amount                                                                   |
 | Preconditions   | User is logged in                                                                                       |
 | Test Data       | Amount: -50                                                                                             |
