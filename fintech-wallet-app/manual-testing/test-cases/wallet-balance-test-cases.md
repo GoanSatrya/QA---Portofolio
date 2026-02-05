@@ -323,5 +323,35 @@ Expected Result:
 - Balance updates correctly once data is retrieved
 
 
+## Automation Candidates – Wallet Balance Module
+
+The following test cases are recommended for automation based on stability,
+business criticality, and regression value.
+
+### Recommended for Automation
+- TC_WALLET_001_01 – View wallet balance after successful login
+- TC_WALLET_002_01 – Wallet balance matches backend API data
+- TC_WALLET_002_02 – Wallet balance remains consistent after page refresh
+- TC_WALLET_003_01 – Sender balance decreases after successful transfer
+- TC_WALLET_004_01 – Receiver balance increases after receiving funds
+
+Reason:
+- High business impact
+- Frequently executed in regression testing
+- Stable and predictable flows
+- Suitable for UI + API assertion automation
+
+### Keep Manual
+- TC_WALLET_002_03 – Backend/API failure handling
+- TC_WALLET_002_04 – Network timeout scenarios
+- TC_WALLET_002_05 – Invalid or null backend response
+- TC_WALLET_003_06 – Duplicate submission edge cases
+- TC_WALLET_004_06 – Delayed network response handling
+
+Reason:
+- Hard to reliably simulate in automation
+- Better validated through exploratory or controlled manual testing
+- Environment-dependent behavior
+
 
 
