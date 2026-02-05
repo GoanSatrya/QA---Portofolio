@@ -1,4 +1,9 @@
-**Manual Test Scenarios – Fintech Wallet App**
+**Test Scenarios – Fund Transfer Feature**
+
+Module: Wallet – Fund Transfer  
+Test Type: Manual  
+Priority: High  
+Risk Level: Critical (Financial Transactions)
 
 
 1. Authentication & Security Scenarios:
@@ -33,7 +38,7 @@
     * Verify no rounding errors occur during calculations
 
 3. Fund Transfer Scenarios (High Risk – Core Feature)
-  - TS_TRANSFER_001 – Successful transfer to another valid user
+  - TS_TRANSFER_001 – User successfully transfers funds to another registered wallet user
     * Verify user can transfer funds to another registered user
     * Verify transaction is completed successfully
     * Verify sender and receiver balances update correctly
@@ -76,9 +81,9 @@
     * Verify user receives friendly error message
     * Verify system does not crash or freeze
 
-  - TS_ERROR_003 – Page refresh during transaction
-  * Verify system handles refresh gracefully
-  * Verify transaction consistency is maintained
+  -   - TS_ERROR_003 – Page refresh during transaction
+    * Verify system handles refresh gracefully
+    * Verify transaction consistency is maintained
 
 6. Basic UX & Usability Scenarios
   - TS_UX_001 – Form validation messages
@@ -88,6 +93,22 @@
   - TS_UX_002 – Loading indicators
     * Verify loading indicator is shown during transfer processing
     * Verify user cannot submit form multiple times while loading
-    * Verify loading indicator is shown during transfer processing
 
-Verify user cannot submit form multiple times while loading
+7. 7. Exploratory Testing Scenarios
+
+  - TS_TRANSFER_EXP_001 – Exploratory testing for fund transfer edge cases
+
+Description:
+Explore unexpected user behavior during fund transfer, such as rapid input changes,
+session timeout, app backgrounding, or unusual numeric formats.
+
+Goal:
+Identify edge cases not covered by predefined scenarios.
+
+
+## Scenario to Test Case Mapping
+
+Each test scenario in this document is converted into one or more detailed manual test cases located at:
+
+manual-testing/test-cases/transfer-test-cases.md
+
