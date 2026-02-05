@@ -56,6 +56,9 @@ Manual Test Scenarios – Fintech Wallet App
     * Verify system prevents duplicate transactions when user clicks submit multiple times
     * Verify only one transaction is recorded
 
+## Related Test Cases
+- See detailed test cases in: test-cases/transfer-test-cases.md
+
 4. Transaction History Scenarios
 
 - TS_HISTORY_001 – View transaction history list:
@@ -92,3 +95,9 @@ Manual Test Scenarios – Fintech Wallet App
 - TS_UX_002 – Loading indicators:
     * Verify loading indicator is shown during transfer processing
     * Verify user cannot submit form multiple times while loading
+ 
+
+
+## Related Test Cases
+- Fund Transfer: test-cases/transfer-test-cases.md
+
